@@ -8,6 +8,7 @@
  */
 class Solution {
 public:
+    
     void deleteNode(ListNode* node) { 
         ListNode* temp;
         while(node->next != NULL){
@@ -17,4 +18,5 @@ public:
     }
        temp->next = NULL;
     }
+    
 };
