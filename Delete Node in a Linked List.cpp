@@ -8,7 +8,7 @@
  */
 class Solution {
 public:
-    
+ //o(n) APPROACH
     void deleteNode(ListNode* node) { 
         ListNode* temp;
         while(node->next != NULL){
@@ -20,3 +20,12 @@ public:
     }
     
 };
+
+
+
+// o(1) aPPROACH
+
+void deleteNode(ListNode* node) { 
+           node->val = node->next->val;
+           node->next = node->next->next;
+    }
